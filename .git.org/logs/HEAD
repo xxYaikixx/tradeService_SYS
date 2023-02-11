@@ -1,0 +1,53 @@
+2f295e997f88f011484d9f5072e307fdf021351a 71039296902734dca511e1358924d0e8d1962435 yaiki877 <yuka.aiki@banana-877.com> 1672924775 +0900	commit: 端末変更（環境再構築）稼働確認済み
+71039296902734dca511e1358924d0e8d1962435 728ae9492e91cee5c4ab91e48dc48c6d8101dd6b yaiki877 <yuka.aiki@banana-877.com> 1673875076 +0900	commit: zipcode,addressにバリデーション付与
+728ae9492e91cee5c4ab91e48dc48c6d8101dd6b ded504b1cb1882868fbf6463023492e83c2d2dbd yaiki877 <yuka.aiki@banana-877.com> 1674029637 +0900	commit: Userデータに住所（続き）のカラムを追加
+ded504b1cb1882868fbf6463023492e83c2d2dbd 953cd7f77e40b7481b0d2b7668abe3fe2c6a4c17 yaiki877 <yuka.aiki@banana-877.com> 1674031054 +0900	commit: パスワードの入力タイプの変更
+953cd7f77e40b7481b0d2b7668abe3fe2c6a4c17 003a0c1a0fa8ecb252bbf7e838fcfbf400e5db8f yaiki877 <yuka.aiki@banana-877.com> 1674031275 +0900	commit: パスワード不一致エラーの箇所変更
+003a0c1a0fa8ecb252bbf7e838fcfbf400e5db8f 19b9ade8bcffc9ec52a28bdad3e665736ad5c36b yaiki877 <yuka.aiki@banana-877.com> 1674192876 +0900	commit: 不必要なimportを削除
+19b9ade8bcffc9ec52a28bdad3e665736ad5c36b 02d1b7dddd8198e89c723f1def45a2c240e7c39c yaiki877 <yuka.aiki@banana-877.com> 1674195130 +0900	commit: react-hook-formをインストール
+02d1b7dddd8198e89c723f1def45a2c240e7c39c 02d1b7dddd8198e89c723f1def45a2c240e7c39c yaiki877 <yuka.aiki@banana-877.com> 1674287235 +0900	reset: moving to HEAD
+02d1b7dddd8198e89c723f1def45a2c240e7c39c 02d1b7dddd8198e89c723f1def45a2c240e7c39c yaiki877 <yuka.aiki@banana-877.com> 1674287338 +0900	reset: moving to HEAD
+02d1b7dddd8198e89c723f1def45a2c240e7c39c 02d1b7dddd8198e89c723f1def45a2c240e7c39c yaiki877 <yuka.aiki@banana-877.com> 1674287374 +0900	reset: moving to HEAD
+02d1b7dddd8198e89c723f1def45a2c240e7c39c 19b9ade8bcffc9ec52a28bdad3e665736ad5c36b yaiki877 <yuka.aiki@banana-877.com> 1674287507 +0900	checkout: moving from feature/create_sys to 19b9ade8bcffc9ec52a28bdad3e665736ad5c36b
+19b9ade8bcffc9ec52a28bdad3e665736ad5c36b def266a9a1e17a842ed1db9e7f91762a91648d77 yaiki877 <yuka.aiki@banana-877.com> 1674287919 +0900	commit: ContainerのUIを戻す
+def266a9a1e17a842ed1db9e7f91762a91648d77 19b9ade8bcffc9ec52a28bdad3e665736ad5c36b yaiki877 <yuka.aiki@banana-877.com> 1674287982 +0900	rebase (start): checkout def266a9a1e17a842ed1db9e7f91762a91648d77^
+19b9ade8bcffc9ec52a28bdad3e665736ad5c36b 02d1b7dddd8198e89c723f1def45a2c240e7c39c yaiki877 <yuka.aiki@banana-877.com> 1674288003 +0900	checkout: moving from 19b9ade8bcffc9ec52a28bdad3e665736ad5c36b to feature/create_sys
+02d1b7dddd8198e89c723f1def45a2c240e7c39c f9e039b9c2a5b44ed0dffe8e39e7b62f50907f4e yaiki877 <yuka.aiki@banana-877.com> 1674288332 +0900	commit: import修正
+f9e039b9c2a5b44ed0dffe8e39e7b62f50907f4e 02d1b7dddd8198e89c723f1def45a2c240e7c39c yaiki877 <yuka.aiki@banana-877.com> 1674288574 +0900	checkout: moving from feature/create_sys to 02d1b7dddd8198e89c723f1def45a2c240e7c39c
+02d1b7dddd8198e89c723f1def45a2c240e7c39c f9e039b9c2a5b44ed0dffe8e39e7b62f50907f4e yaiki877 <yuka.aiki@banana-877.com> 1674288694 +0900	checkout: moving from 02d1b7dddd8198e89c723f1def45a2c240e7c39c to feature/create_sys
+f9e039b9c2a5b44ed0dffe8e39e7b62f50907f4e f9e039b9c2a5b44ed0dffe8e39e7b62f50907f4e yaiki877 <yuka.aiki@banana-877.com> 1674292923 +0900	reset: moving to HEAD
+f9e039b9c2a5b44ed0dffe8e39e7b62f50907f4e 37a07070e6dd39595f55654bc3d72113d3e20ef2 yaiki877 <yuka.aiki@banana-877.com> 1674441745 +0900	commit: registerConfirmにInputの値を渡せた
+37a07070e6dd39595f55654bc3d72113d3e20ef2 09b93d9949b5e26c3aecff16f20ff12f74c131d1 yaiki877 <yuka.aiki@banana-877.com> 1674454300 +0900	commit: navigateできるようになった
+09b93d9949b5e26c3aecff16f20ff12f74c131d1 59e1bfc8140122a9b08d91bdffada4e05cf71b61 yaiki877 <yuka.aiki@banana-877.com> 1674474273 +0900	commit: Reactv6の書き方で値をRegisterConfirmに渡せた
+59e1bfc8140122a9b08d91bdffada4e05cf71b61 94fdf59a3868ce7e68f90ea37ce7c3906bef53bc yaiki877 <yuka.aiki@banana-877.com> 1674474358 +0900	commit: 確認画面に値が表示された
+94fdf59a3868ce7e68f90ea37ce7c3906bef53bc eedc6ff1ec55f95cdb278ba0105e77989e667cfc yaiki877 <yuka.aiki@banana-877.com> 1674538891 +0900	commit: リアルタイムでエラーメッセージを表示させるようにした（名前のみ）
+eedc6ff1ec55f95cdb278ba0105e77989e667cfc 86fb3fd1f8ed09f4d31d37df813975a976aeb4a9 yaiki877 <yuka.aiki@banana-877.com> 1674545454 +0900	commit: Chakra UI + React Hook Formのガイドに沿って書き方を変更
+86fb3fd1f8ed09f4d31d37df813975a976aeb4a9 b9b65271cc7ab6e85cd61e431b6946be368589bb yaiki877 <yuka.aiki@banana-877.com> 1674546005 +0900	commit: htmlforを追加
+b9b65271cc7ab6e85cd61e431b6946be368589bb 827f3f788cab7a41173b3bad779cbb25f1114642 yaiki877 <yuka.aiki@banana-877.com> 1674553871 +0900	commit: 確認画面フォーマット変更
+827f3f788cab7a41173b3bad779cbb25f1114642 a57f272a93f1392a8cdc02829090d8eefca59f86 yaiki877 <yuka.aiki@banana-877.com> 1674624418 +0900	commit: 本登録できるようになった
+a57f272a93f1392a8cdc02829090d8eefca59f86 98b0c36ab964cac68d6a0812ed664f5d8b6aa0a6 yaiki877 <yuka.aiki@banana-877.com> 1674625307 +0900	commit: 戻るボタンの実装
+98b0c36ab964cac68d6a0812ed664f5d8b6aa0a6 ff1f63c5ab2e6cf9bd1be971a0772c2728fddebd yaiki877 <yuka.aiki@banana-877.com> 1674626000 +0900	commit: ボタンの色変更
+ff1f63c5ab2e6cf9bd1be971a0772c2728fddebd 09c879af60f5cdbaa741995f9caadccea175a6af yaiki877 <yuka.aiki@banana-877.com> 1674649073 +0900	commit: 住所の出力条件を変更
+09c879af60f5cdbaa741995f9caadccea175a6af b050e2f9455c7ef6c61835849ad55f968881085b yaiki877 <yuka.aiki@banana-877.com> 1675143976 +0900	commit: 確認画面から戻って再登録すると、住所にバリデーションエラーが出るバグを修正
+b050e2f9455c7ef6c61835849ad55f968881085b b23e2fed1f3b8349276bd5d6164681b55cd164a9 yaiki877 <yuka.aiki@banana-877.com> 1675144070 +0900	commit: 不要なconsole.log削除
+b23e2fed1f3b8349276bd5d6164681b55cd164a9 e2a2d2584169972927d3c4617baeff8c995362d2 yaiki877 <yuka.aiki@banana-877.com> 1675147508 +0900	commit: コメント付与
+e2a2d2584169972927d3c4617baeff8c995362d2 caf1b86f951ba23285d9146964a43737515bb87d yaiki877 <yuka.aiki@banana-877.com> 1675152411 +0900	commit: フォームにサムネイルを追加（見た目・バリデーションのみ）
+caf1b86f951ba23285d9146964a43737515bb87d 46901f46c9e15568051ec74746c9692dc0c4b3bf yaiki877 <yuka.aiki@banana-877.com> 1675162299 +0900	commit: migration,modelへの項目追加
+46901f46c9e15568051ec74746c9692dc0c4b3bf 03cd2bdf6ce9324e1f724f7e47d8b6e7dd7df705 yaiki877 <yuka.aiki@banana-877.com> 1675175494 +0900	commit: 画像を登録することができた
+03cd2bdf6ce9324e1f724f7e47d8b6e7dd7df705 994ff8d9ef350f6699d1eb7ca2622112f8f0fcd8 yaiki877 <yuka.aiki@banana-877.com> 1675219804 +0900	commit: 画像ファイルを公開ドライバに入れた
+994ff8d9ef350f6699d1eb7ca2622112f8f0fcd8 6fe792750ece6c69b8ed4ddca8175242f3377229 yaiki877 <yuka.aiki@banana-877.com> 1675317324 +0900	commit: 登録したらログイン画面にメッセージを出力させた
+6fe792750ece6c69b8ed4ddca8175242f3377229 092407742032e49d1ed2c13e84f8355babc889de yaiki877 <yuka.aiki@banana-877.com> 1675317333 +0900	commit: スペルミスを見つけた
+092407742032e49d1ed2c13e84f8355babc889de 97d022d79b659361828f095c7f403c70e03b2101 yaiki877 <yuka.aiki@banana-877.com> 1675318558 +0900	commit: ログイン画面にメッセージの表示の条件を追加
+97d022d79b659361828f095c7f403c70e03b2101 7e84c188989e9908b267b99b4dde5c2005075f81 yaiki877 <yuka.aiki@banana-877.com> 1675671510 +0900	commit: ログイン後のサムネイルの反映
+7e84c188989e9908b267b99b4dde5c2005075f81 44437e7022f0ebc02e02365519256e214eadd9ee yaiki877 <yuka.aiki@banana-877.com> 1675765628 +0900	commit: Userファクトリのカラムの内容の更新
+44437e7022f0ebc02e02365519256e214eadd9ee f85a54650085483f24bb8c91ce3d180af0ee4fe8 yaiki877 <yuka.aiki@banana-877.com> 1675844417 +0900	commit: 募集作成画面のエラーの表示形式を変更（テキストボックスのみ）
+f85a54650085483f24bb8c91ce3d180af0ee4fe8 eee8360398e7a39545764202abed862350d77542 yaiki877 <yuka.aiki@banana-877.com> 1675844430 +0900	commit: 名称変更
+eee8360398e7a39545764202abed862350d77542 468f40dd134c0ccd85faa1bf9e3eb7d073fd9fe7 yaiki877 <yuka.aiki@banana-877.com> 1675844449 +0900	commit: 名称変更
+468f40dd134c0ccd85faa1bf9e3eb7d073fd9fe7 c4aa9bad9338e3013ab4d8ba0033684283ee4f88 yaiki877 <yuka.aiki@banana-877.com> 1675844462 +0900	commit: 確認画面の作成（テキストボックスのみ）
+c4aa9bad9338e3013ab4d8ba0033684283ee4f88 3de5843bedd5e1f63281addb9a2293583c5b0222 yaiki877 <yuka.aiki@banana-877.com> 1675858131 +0900	commit: Cannot read properties of undefined ('name')対策
+3de5843bedd5e1f63281addb9a2293583c5b0222 14a837a616510f02ddfedae9152b4178e53c713b yaiki877 <yuka.aiki@banana-877.com> 1675858479 +0900	commit: ラベルの記述の修正、エラーの表示の追加（Radioボタン）
+14a837a616510f02ddfedae9152b4178e53c713b e3308724984f020f8564bc89634e10e9ad3e0c1a yaiki877 <yuka.aiki@banana-877.com> 1675859006 +0900	commit: Radioボタン全て確認画面に表示させることができた（Valueは未変換）
+e3308724984f020f8564bc89634e10e9ad3e0c1a 1024dadb521448d7701f2a039272e98d88758a4b yaiki877 <yuka.aiki@banana-877.com> 1675859053 +0900	commit: 不要なコメントの削除
+1024dadb521448d7701f2a039272e98d88758a4b 3fe9f24f7f6cd14d5fa41b5c2b9e4e8363fe795a yaiki877 <yuka.aiki@banana-877.com> 1675859242 +0900	commit: value変換済
+3fe9f24f7f6cd14d5fa41b5c2b9e4e8363fe795a 0ad60581f45daf8fe8ffea9f6f1dd4e920621032 yaiki877 <yuka.aiki@banana-877.com> 1675862954 +0900	commit: userIDがnullだったので修正
+0ad60581f45daf8fe8ffea9f6f1dd4e920621032 46fff95f07ac54462b804e2c133bfe60486d4797 yaiki877 <yuka.aiki@banana-877.com> 1675862966 +0900	commit: 認証情報の再設定
