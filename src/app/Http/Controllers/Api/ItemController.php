@@ -30,7 +30,7 @@ class ItemController extends Controller
         $item->comment = $request->comment;
         $image = $request->file('image');
         $path = Storage::disk('public')->putFile('image', $image);
-        $item->image = $path;
+        $item->image = 'storage/'.$path;
         $item->user_id =  Auth::id();
         $item->change_item_name = $request->itemTargetName;
         $item->change_item_status = $request->itemTargetStatus;

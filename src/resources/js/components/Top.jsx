@@ -39,6 +39,7 @@ export const Top = () => {
             nickname: item.nickname,
         })
     );
+
     return (
         <>
             <div >
