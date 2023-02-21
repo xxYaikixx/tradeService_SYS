@@ -22,7 +22,6 @@ class UserController extends Controller
         $thumbnail = $request->file('thumbnail');
         $path = Storage::disk('public')->putFile('thumbnail', $thumbnail);
         $user->thumbnail = $path;
-        
         $user->email = $request->email;
         $user->zipcode =  $request->zipcode;
         $user->address = $request->address;

@@ -3,6 +3,8 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\API\AuthController;
+use App\Http\Controllers\API\ItemController;
+use App\Http\Controllers\API\UserController;
 use Illuminate\Support\Facades\Log;
 
 /*
@@ -16,18 +18,17 @@ use Illuminate\Support\Facades\Log;
 |
 */
 
-Route::group(['middleware' => 'api'], function () {
-    Route::get('posts', 'App\Http\Controllers\Api\ItemController@index');
-    Route::post('posts/create', 'App\Http\Controllers\Api\ItemController@create');
-    Route::post('posts/register', 'App\Http\Controllers\Api\UserController@create');
-});
-
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
-
+// 未認証状態で使う
 Route::post('login', [AuthController::class, 'login']);
+Route::post('posts/register', [UserController::class, 'create']);
 
-Route::middleware('auth:sanctum')->group(function () {
+
+// 認証済み状態で使う
+Route::middleware(['auth:sanctum'])->group(function () {
+    Route::get('posts', [ItemController::class,'index']);
+    Route::post('posts/create', [ItemController::class,'create']);
+    Route::get('/user', function (Request $request) {
+        return $request->user();
+    });
     Route::post('logout', [AuthController::class, 'logout']);
 });
