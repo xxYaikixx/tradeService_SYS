@@ -3,10 +3,27 @@ import React, { useState, useEffect } from 'react'
 import { Header } from './Header';
 import { ItemInfo } from './ItemInfo';
 import axios from 'axios';
+import { useToast } from '@chakra-ui/react'
+import { useLocation } from 'react-router-dom';
+
 
 export const Top = () => {
-    const { isOpen, onOpen, onClose } = useDisclosure()
-    const btnRef = React.useRef()
+    const { isOpen, onOpen, onClose } = useDisclosure();
+    const btnRef = React.useRef();
+    const location = useLocation();
+    const toast = useToast();
+    const message = location.state !== null ? location.state.message : null;
+    useEffect(() => {
+        if (message !== null) {
+            toast({
+                title: message,
+                status: 'success',
+                duration: 9000,
+                isClosable: true,
+            })
+        }
+    }, [message]);
+
 
     //postsの状態を管理する
     const [items, setItems] = useState([]);
