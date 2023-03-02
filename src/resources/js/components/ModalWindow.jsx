@@ -1,5 +1,5 @@
 import React from "react";
-import { Badge, Box, Button, ChakraProvider, Container, Image, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay, Text, useDisclosure } from '@chakra-ui/react'
+import { Badge, ButtonGroup, Button, ChakraProvider, Container, Image, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay, Text, useDisclosure } from '@chakra-ui/react'
 
 export const ModalWindow = (props) => {
     const { imageSrc, itemComment, itemAuthor, nickname } = props;
@@ -23,6 +23,14 @@ export const ModalWindow = (props) => {
                         <Container>
                             <label>【コメント】</label>
                             <Text>{itemComment}</Text>
+                        </Container>
+                        <Container textAlign="center">
+                            <ButtonGroup gap='4'>
+                                <Button my={4} colorScheme='pink' variant='outline'>
+                                    ♥ お気に入りに追加
+                                </Button>
+                                <Button my={4} colorScheme='orange'>取引する</Button>
+                            </ButtonGroup>
                         </Container>
                     </ModalBody>
                 </ModalContent>
