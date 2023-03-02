@@ -6,6 +6,7 @@ import { Login } from "./components/Login";
 import { CreateItem } from "./components/CreateItem";
 import { CreateItemConfirm } from "./components/CreateItemConfirm";
 import { Register } from "./components/Register";
+import { Search } from "./components/Search";
 import { createRoot } from 'react-dom/client';
 
 import axios from 'axios';
@@ -34,6 +35,7 @@ export const Example = () => {
                             <Route path="/create/confirm" element={<CreateItemConfirm />} />;
                             <Route path="/register" element={<Register />} />;
                             <Route path="/register/confirm" element={<RegisterConfirm />} />;
+                            <Route path="/search" element={<Search />} />;
                         </Routes>
                     </>
                 </BrowserRouter>

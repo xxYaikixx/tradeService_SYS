@@ -57,7 +57,7 @@ export const Header = (props) => {
                                 </Button>
                                 <Button w='100%' bg='transparent'>
                                     <SearchIcon pr={2} />
-                                    探す
+                                    <Link to='/search'>探す</Link>
                                 </Button>
                             </DrawerBody>
                             <DrawerFooter>
