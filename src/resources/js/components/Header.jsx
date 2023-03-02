@@ -65,7 +65,7 @@ export const Header = (props) => {
                         </DrawerContent>
                     </Drawer>
                     <Box p='2'>
-                        <Heading size='md'>ガチャガチャ景品マッチングサービス</Heading>
+                        <Link to='/'><Heading size='md'>ガチャガチャ景品マッチングサービス</Heading></Link>
                     </Box>
                     <Spacer />
                     <Flex minWidth='max-content' alignItems='center' gap='2' py={1} bg='#a3d1ff' color='gray.600'>
