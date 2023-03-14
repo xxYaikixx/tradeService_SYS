@@ -64,6 +64,13 @@ export const Search = () => {
                     <Center>
                         <Box borderWidth='1px' borderRadius='lg' my="12" mx="8" w='80%' >
                             <FormControl>
+                                <Box p="4" w="640px">
+                                    <FormLabel>ガチャガチャ名</FormLabel>
+                                    <Flex>
+                                        <Input type='text' bgColor="white" size='lg' />
+                                        <Button mx={4} my={1} >しぼる</Button>
+                                    </Flex>
+                                </Box>
                                 <Flex>
                                     <Box p="4" w="640px">
                                         <FormLabel>欲しい商品名</FormLabel>
