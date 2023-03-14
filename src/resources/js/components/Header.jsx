@@ -76,6 +76,7 @@ export const Header = (props) => {
                                 <Img borderRadius='full' boxSize='40px' src={localStorage.getItem('auth_thumbnail')} alt="" />
                             </MenuButton>
                             <MenuList>
+                                <MenuItem >マイページ</MenuItem>
                                 <MenuItem onClick={logoutSubmit}>ログアウト</MenuItem>
                             </MenuList>
                         </Menu>
