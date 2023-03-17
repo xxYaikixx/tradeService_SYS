@@ -42,6 +42,7 @@ class ItemController extends Controller
     // itemの検索
     public function search(Request $request)
     {
+        Log::info($request);
         $itemsQueryBuilder = null;
         $this->addWhere($itemsQueryBuilder, $request->itemName, 'name');
         $items = is_null($itemsQueryBuilder) ? Item::all() : $itemsQueryBuilder->get();

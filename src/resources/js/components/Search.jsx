@@ -3,26 +3,15 @@ import React, { useState, useEffect } from 'react'
 import { Header } from './Header';
 import { ItemInfo } from './ItemInfo';
 import axios from 'axios';
-import { useToast } from '@chakra-ui/react'
-import { useLocation } from 'react-router-dom';
+import { useForm, Controller } from 'react-hook-form';
 
 export const Search = () => {
     const { isOpen, onOpen, onClose } = useDisclosure();
     const btnRef = React.useRef();
-    const location = useLocation();
-    const toast = useToast();
-    const message = location.state !== null ? location.state.message : null;
-    useEffect(() => {
-        if (message !== null) {
-            toast({
-                title: message,
-                status: 'success',
-                duration: 9000,
-                isClosable: true,
-            })
-        }
-    }, [message]);
-
+    const {
+        handleSubmit,
+        control,
+    } = useForm({ mode: 'onChange' })
 
     //postsの状態を管理する
     const [items, setItems] = useState([]);
@@ -41,7 +30,7 @@ export const Search = () => {
             });
     }
 
-    let contents = [];
+    const contents = [];
     items.map((item) =>
         contents.push({
             name: item.name,
@@ -56,12 +45,16 @@ export const Search = () => {
         })
     );
 
-    // Parameters
     const [wantedItem, setWantedItem] = useState('');
+    const [wantedStatus, setWantedStatus] = useState('');
     const search = () => {
-        console.log('さがすボタン！');
         axios
-            .get('/api/search', { params: { itemName: wantedItem } })
+            .get('/api/search', {
+                params: {
+                    itemName: wantedItem,
+                    status: wantedStatus,
+                }
+            })
             .then(response => {
                 setItems(response.data);     //バックエンドから返ってきたデータでpostsを更新する
             })
@@ -93,16 +86,28 @@ export const Search = () => {
                                             <FormLabel>欲しい商品名</FormLabel>
                                             <Input type='text' bgColor="white" size='md' value={wantedItem} onChange={e => setWantedItem(e.target.value)} />
                                             <Box p="4">
-                                                <FormLabel as='legend'>状態</FormLabel>
-                                                <RadioGroup defaultValue='4' >
-                                                    <Stack>
-                                                        <Radio value='4'><Text fontSize='sm'>どちらでもよい</Text></Radio>
-                                                        <Radio value='0'><Text fontSize='sm'>カプセル未開封</Text></Radio>
-                                                        <Radio value='1'><Text fontSize='sm'>カプセルのみ開封済み</Text></Radio>
-                                                        <Radio value='2'><Text fontSize='sm'>カプセルおよび内包装開封済み（新品同様）</Text></Radio>
-                                                        <Radio value='3'><Text fontSize='sm'>開封済中古品</Text></Radio>
-                                                    </Stack>
-                                                </RadioGroup>
+                                                <Controller
+                                                    render={
+                                                        ({ field }) => {
+                                                            return (
+                                                                <>
+                                                                    <FormLabel htmlFor='wantedStatus' as='legend'>状態</FormLabel>
+                                                                    <RadioGroup {...field} >
+                                                                        <Stack>
+                                                                            <Radio value='4'><Text fontSize='sm'>どちらでもよい</Text></Radio>
+                                                                            <Radio value='0'><Text fontSize='sm'>カプセル未開封</Text></Radio>
+                                                                            <Radio value='1'><Text fontSize='sm'>カプセルのみ開封済み</Text></Radio>
+                                                                            <Radio value='2'><Text fontSize='sm'>カプセルおよび内包装開封済み（新品同様）</Text></Radio>
+                                                                            <Radio value='3'><Text fontSize='sm'>開封済中古品</Text></Radio>
+                                                                        </Stack>
+                                                                    </RadioGroup>
+                                                                </>
+                                                            );
+                                                        }
+                                                    }
+                                                    name="itemTargetStatus"
+                                                    control={control}
+                                                />
                                             </Box>
                                         </Box>
                                         <Box py="8"><Text fontSize='4xl'>⇔</Text></Box>
